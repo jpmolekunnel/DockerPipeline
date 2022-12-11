@@ -37,6 +37,7 @@ node {
         sh "docker run -d --rm -p $httpPort:$httpPort --name $containerName $dockerHubUser/$containerName:$tag"
         echo "Application started on port: ${httpPort} (http)"
         
+        
         /*sh """
            kubectl get pods
            kubectl delete deployment kubernetes-bootcamp | true
